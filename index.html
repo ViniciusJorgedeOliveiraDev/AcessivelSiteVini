@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AluraBooks</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+    <body>
+        <header class="cabeçalho">
+            <div class="container">
+                <input type="checkbox" id="menu" class="container__botao" />
+                <label for="menu">
+                  <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+                </label>
+
+                <ul class="lista-menu">
+                    <li class="lista-menu__titulo">Categorias</li>
+                    <li class="lista-menu__item">
+                      <a href="#" class="lista-menu__link">Acessibilidade nas Escolas</a>
+                    </li>
+                    <li class="lista-menu__item">
+                      <a href="#" class="lista-menu__link">Infraestrutura Inclusiva                      </a>
+                    </li>
+                    <li class="lista-menu__item">
+                      <a href="#" class="lista-menu__link">Direitos e Inclusão</a>
+                    </li>
+                    <li class="lista-menu__item">
+                      <a href="#" class="lista-menu__link">Recursos de Apoio</a>
+                    </li>
+              </div>
+            <div class="container">
+                <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+                <a href="#"><img src="img/Compartilhar.png" alt="Carrinho de compras" class="container__imagem"></a>
+                <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+            </div>
+
+            
+        </header>
+        <section class="banner">
+          <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+          <p class="banner__texto">
+            Sim! Você pode começar destacando as necessidades mais urgentes de acessibilidade na escola, como rampas e elevadores, 
+            e, em seguida, fazer uma pesquisa sobre as normas de inclusão. Depois, você pode trabalhar na criação de banners que 
+            mostrem mensagens de incentivo à inclusão e mostrar exemplos visuais de infraestrutura acessível.
+          </p>
+          <input
+            type="search"
+            class="banner__pesquisa"
+            placeholder="Saiba mais sobre Acessibilidade nas Escolas..."
+          />
+        </section>
+
+        <section class=”carrossel”>
+          <h2 class="carrossel__titulo">Acessibilidade em Cada Detalhe. Educação em Cada Caminho.</h2>
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+      
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="img/ace4.png" alt="Livro Guia front end"></div>
+              <div class="swiper-slide"><img src="img/ace5.png" alt="Livro sobre portugol"></div>
+              <div class="swiper-slide"><img src="img/ace6.png" alt="livro sobre acessibilidade"></div>
+              <div class="swiper-slide"><img src="img/ace1.png" alt="Livro sobre liderança em design da alura books">
+              </div>
+              <div class="swiper-slide"><img src="img/ace2.png"
+                  alt="Livro sobre apache kafka e spring boot da alura books"></div>
+ 
+              <div class="swiper-slide"><img src="img/ace3.png" alt="Livro sobre javascript assertivo da alurabooks">
+              </div>
+         
+            </div>
+      
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+      
+          <div class="card">
+            <!-- 1º linha -->
+            <div class="card__descrição">
+              <!-- 1º coluna -->
+              <div class="descrição">
+                <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+                <h3 class="descrição__titulo">DESABAFO DE UM JOVEM</h3>
+                <h2 class="descrição__titulo-livro">Gabriel Batista</h2>
+                <p class="descrição__texto">Eu sou aluno e uso cadeira de rodas para me locomover, e, sinceramente, não é fácil lidar com a falta de acessibilidade nas escolas.
+                   Muitas vezes, as rampas são inclinadas demais, os corredores apertados, e o acesso a salas ou outros espaços, como o refeitório, não é adequado. Quando não há
+                    elevadores, me sinto limitado e até excluído de certas atividades. Isso acaba atrapalhando não só meu aprendizado, mas também minha participação no ambiente
+                     escolar como um todo.
+
+                  Acho que, para melhorar, seria essencial que todas as escolas tivessem rampas seguras, elevadores funcionais, e até mesmo mais consciência dos 
+                  professores sobre a nossa realidade. A inclusão não deve ser apenas uma ideia 
+                  bonita no papel, mas algo prático, onde todos nós, com ou sem deficiência, possamos estudar e participar de tudo de forma igual.
+                </p>
+              </div>
+              <!-- 2º coluna -->
+              <img src="img/jovem.png" class="descrição__imagem">
+            </div>
+      
+            <!-- 2º linha -->
+            <div class="card__botões">
+              <!-- 1º coluna -->
+              <ul class="botões">
+                <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                <li class="botões__item"><img src="img/Compartilhar.png" alt="Adicionar no carrinho de compras"></li>
+              </ul>
+              <!-- 2º coluna -->
+              <a href="#" class="botões__ancora">Saiba mais</a>
+            </div>
+          </div>
+      
+      
+      
+        </section>
+
+        <section class="tópicos">
+          <h2 class="tópicos__titulo">OUTROS TÓPICOS</h2>
+          <ul class="tópicos__lista">
+            <li class="tópicos__item"><a href="#" class="tópicos__link">Tecnologias Assistivas na Educação
+            </a></li>
+            <li class="tópicos__item">
+              <a href="#" class="tópicos__link">Rampas de Acesso: Como Funcionam?</a>
+            </li>
+            <li class="tópicos__item">
+              <a href="#" class="tópicos__link">Elevadores em Instituições de Ensino</a>
+            </li>
+            <li class="tópicos__item">
+              <a href="#" class="tópicos__link">Inclusão de Alunos com Deficiência Visual
+              </a>
+            </li>
+            <li class="tópicos__item">
+              <a href="#" class="tópicos__link">Legislação de Acessibilidade Escolar
+              </a>
+            </li>
+            <li class="tópicos__item">
+              <a href="#" class="tópicos__link">Design Universal para Ambientes Escolares
+              </a>
+            </li>
+            <li class="tópicos__item">
+              <a href="#" class="tópicos__link">Adaptações Curriculares Inclusivas
+              </a>
+            </li>
+            <li class="tópicos__item">
+              <a href="#" class="tópicos__link">Exemplos de Boas Práticas em Inclusão Escolar
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="contato">
+          <h2 class="contato__titulo">Fique por dentro das novas Atualizações!</h2>
+          <p class="contato__texto"> Quebrando Barreiras, Construindo Pontes.</p>
+          <input type="email" placeholder="Cadastre seu e-mail" class="contato__email"/>
+        </section>
+
+        <hr />
+
+<footer class="rodapé">
+  <h2 class="rodapé__titulo">copyright 2024 Alura Dev by Vinicius Oliveira</h2>
+</footer>
+
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+
+
+  
+</div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+    const swiper = new Swiper(".swiper", {
+    spaceBetween: 10,
+    slidesPerView: 3,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+    },
+        // If we need pagination
+        pagination: {
+      el: ".swiper-pagination",
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+  });
+</script>
+  
+        </script>
+      </body>
+
+    
+</html>
